@@ -17,7 +17,7 @@ export function Loading({ loading, ...more }: LoadingProps) {
       )}
     >
       <svg
-        className="animate-spin mr-3 h-8 w-8 text-black"
+        className="animate-spin mr-3 h-8 w-8 text-black dark:text-dark-text"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"

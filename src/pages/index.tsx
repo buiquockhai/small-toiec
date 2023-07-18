@@ -58,7 +58,7 @@ export default function IndexPage() {
         {Array.from("ABCD").map((item) => (
           <div
             key={item}
-            className="rounded bg-slate-100 transition hover:bg-slate-200 grid place-content-center p-4 cursor-pointer select-none font-semibold"
+            className="rounded bg-slate-100 border border-solid dark:border-dark-border dark:bg-dark-bg transition hover:opacity-60 grid place-content-center p-4 cursor-pointer select-none font-semibold"
             onClick={() => handleSelect(item.toLowerCase())}
           >
             {item}

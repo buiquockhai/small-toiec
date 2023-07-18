@@ -13,7 +13,8 @@ export function Button({ children, variant = "fill", ...more }: ButtonProps) {
         "w-full rounded py-4 px-6 border-none outline-none font-semibold cursor-pointer transition",
         {
           "bg-[#fa6060] text-white hover:bg-red-500": variant === "fill",
-          "bg-gray-200 text-slate-700 hover:bg-gray-300": variant === "light",
+          "bg-gray-200 dark:text-dark-text !border !border-solid dark:border-dark-border text-slate-700 hover:opacity-70 dark:bg-dark-bg":
+            variant === "light",
         }
       )}
       {...more}

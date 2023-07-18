@@ -29,21 +29,21 @@ export function Confirmation({
         aria-hidden
         onClick={onClose}
       />
-      <div className="max-w-sm absolute w-full bg-white rounded p-4 flex flex-col">
+      <div className="max-w-sm absolute w-full bg-white dark:bg-dark-bg dark:border border-solid dark:border-dark-border rounded p-4 flex flex-col">
         <p className="font-semibold">{title}</p>
-        <p className="mt-3 text-slate-500">{message}</p>
+        <p className="mt-3 text-slate-500 dark:text-dark-text">{message}</p>
         <div className="ml-auto flex items-center gap-2 mt-4">
           <button
             onClick={onClose}
             type="button"
-            className="w-full rounded py-3 px-4 text-sm border-none outline-none font-semibold cursor-pointer transition bg-gray-200 text-slate-700 hover:bg-gray-300"
+            className="w-full rounded py-3 px-4 text-sm border-none outline-none font-semibold cursor-pointer transition bg-gray-200 hover:opacity-75 dark:bg-dark-bg-light dark:text-dark-text dark:border dark:border-solid dark:border-dark-border"
           >
             Cancel
           </button>
           <button
             onClick={onConfirm}
             type="button"
-            className="w-full rounded py-3 px-4 text-sm border-none outline-none font-semibold cursor-pointer transition bg-blue-500 hover:bg-blue-600 text-white"
+            className="w-full rounded py-3 px-4 text-sm border-none outline-none font-semibold cursor-pointer transition bg-blue-500 hover:opacity-75 text-white"
           >
             Confirm
           </button>

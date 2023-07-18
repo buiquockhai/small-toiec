@@ -24,15 +24,15 @@ export default function SubmitPage() {
     <div className="mt-20 flex flex-col w-full gap-2">
       {Array.from({ length: TOTAL }).map((_, index) => (
         <div key={index} className="grid grid-cols-5 gap-2 group select-none">
-          <div className="p-4 rounded bg-slate-100 grid place-content-center group-hover:bg-slate-200 transition">
+          <div className="p-4 rounded bg-slate-100 dark:bg-dark-bg dark:border dark:border-solid dark:border-dark-border grid place-content-center group-hover:opacity-75 transition">
             {index + 1}
           </div>
-          <div className="col-span-2 p-4 rounded bg-slate-100 font-semibold text-xl grid place-content-center uppercase group-hover:bg-slate-200 transition">
+          <div className="col-span-2 p-4 rounded bg-slate-100 dark:bg-dark-bg dark:border dark:border-solid dark:border-dark-border font-semibold text-xl grid place-content-center uppercase group-hover:opacity-75 transition">
             {results[index + 1]}
           </div>
           <div
             className={classnames(
-              "p-4 rounded bg-slate-100 grid place-content-center group-hover:bg-slate-200 transition cursor-pointer",
+              "p-4 rounded bg-slate-100 dark:bg-dark-bg dark:border dark:border-solid dark:border-dark-border grid place-content-center group-hover:opacity-75 transition cursor-pointer",
               {
                 "!bg-green-200": select[index + 1] === true,
               }
@@ -43,7 +43,7 @@ export default function SubmitPage() {
           </div>
           <div
             className={classnames(
-              "p-4 rounded bg-slate-100 grid place-content-center group-hover:bg-slate-200 transition cursor-pointer",
+              "p-4 rounded bg-slate-100 dark:bg-dark-bg dark:border dark:border-solid dark:border-dark-border grid place-content-center group-hover:opacity-75 transition cursor-pointer",
               {
                 "!bg-red-200": select[index + 1] === false,
               }
